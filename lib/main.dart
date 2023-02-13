@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 
 void main() => runApp(XylophoneApp());
 
@@ -14,33 +14,61 @@ class XylophoneApp extends StatelessWidget {
         children: <Widget>[
           TextButton(
             style: TextButton.styleFrom(backgroundColor: Colors.red),
-            onPressed: () {},
-            child: Text('a'),
+            onPressed: () {
+              AssetsAudioPlayer.newPlayer().open(
+                Audio("assets/note1.wav"),
+              );
+            },
+            child: null,
           ),
           TextButton(
               style: TextButton.styleFrom(backgroundColor: Colors.orange),
-              onPressed: () {},
-              child: Text('aa')),
+              onPressed: () {
+                AssetsAudioPlayer.newPlayer().open(
+                  Audio("assets/note2.wav"),
+                );
+              },
+              child: null),
           TextButton(
               style: TextButton.styleFrom(backgroundColor: Colors.yellow),
-              onPressed: () {},
-              child: Text('aa')),
+              onPressed: () {
+                AssetsAudioPlayer.newPlayer().open(
+                  Audio("assets/note3.wav"),
+                );
+              },
+              child: null),
           TextButton(
               style: TextButton.styleFrom(backgroundColor: Colors.lightGreen),
-              onPressed: () {},
-              child: Text('aa')),
+              onPressed: () {
+                AssetsAudioPlayer.newPlayer().open(
+                  Audio("assets/note4.wav"),
+                );
+              },
+              child: null),
           TextButton(
               style: TextButton.styleFrom(backgroundColor: Colors.green),
-              onPressed: () {},
-              child: Text('aa')),
+              onPressed: () {
+                AssetsAudioPlayer.newPlayer().open(
+                  Audio("assets/note5.wav"),
+                );
+              },
+              child: null),
           TextButton(
               style: TextButton.styleFrom(backgroundColor: Colors.blue),
-              onPressed: () {},
-              child: Text('aa')),
+              onPressed: () {
+                AssetsAudioPlayer.newPlayer().open(
+                  Audio("assets/note6.wav"),
+                );
+              },
+              child: null),
           TextButton(
               style: TextButton.styleFrom(backgroundColor: Colors.purple),
-              onPressed: () {},
-              child: Text('aa')),
+              onPressed: () {
+                AssetsAudioPlayer.newPlayer().open(
+                  Audio("assets/note7.wav"),
+                );
+              },
+              child: null),
         ],
       ))),
     );
