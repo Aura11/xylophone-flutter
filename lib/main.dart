@@ -19,7 +19,27 @@ class XylophoneApp extends StatelessWidget {
           TextButton(
               style: TextButton.styleFrom(backgroundColor: Colors.orange),
               onPressed: () {},
-              child: Text('aa'))
+              child: Text('aa')),
+          TextButton(
+              style: TextButton.styleFrom(backgroundColor: Colors.yellow),
+              onPressed: () {},
+              child: Text('aa')),
+          TextButton(
+              style: TextButton.styleFrom(backgroundColor: Colors.lightGreen),
+              onPressed: () {},
+              child: Text('aa')),
+          TextButton(
+              style: TextButton.styleFrom(backgroundColor: Colors.green),
+              onPressed: () {},
+              child: Text('aa')),
+          TextButton(
+              style: TextButton.styleFrom(backgroundColor: Colors.blue),
+              onPressed: () {},
+              child: Text('aa')),
+          TextButton(
+              style: TextButton.styleFrom(backgroundColor: Colors.purple),
+              onPressed: () {},
+              child: Text('aa')),
         ],
       ))),
     );
