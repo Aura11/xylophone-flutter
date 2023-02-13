@@ -10,6 +10,7 @@ class XylophoneApp extends StatelessWidget {
       home: Scaffold(
           body: SafeArea(
               child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           TextButton(
             style: TextButton.styleFrom(backgroundColor: Colors.red),
