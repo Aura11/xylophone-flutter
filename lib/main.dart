@@ -8,11 +8,20 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          body: Center(
-        child: Container(
-          color: Colors.red,
-        ),
-      )),
+          body: SafeArea(
+              child: Column(
+        children: <Widget>[
+          TextButton(
+            style: TextButton.styleFrom(backgroundColor: Colors.red),
+            onPressed: () {},
+            child: Text('a'),
+          ),
+          TextButton(
+              style: TextButton.styleFrom(backgroundColor: Colors.orange),
+              onPressed: () {},
+              child: Text('aa'))
+        ],
+      ))),
     );
   }
 }
